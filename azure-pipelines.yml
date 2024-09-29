@@ -166,7 +166,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'docker'
-    repository: 'mustapha69/Front_TunisairMob2'
+    repository: 'mustapha69/front_tunisairmob2'
     command: 'buildAndPush'
     Dockerfile: 'Docker/Dockerfile'  # Frontend Dockerfile
     buildContext: '/home/azureuser/myagent/_work/5/s'
@@ -177,7 +177,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'docker'
-    repository: 'mustapha69/Back_TunisairMob2'
+    repository: 'mustapha69/back_tunisairmob2'
     command: 'buildAndPush'
     Dockerfile: 'backend/Docker/backend.Dockerfile'
     buildContext: '/home/azureuser/myagent/_work/5/s'  # This should be the root of your project
