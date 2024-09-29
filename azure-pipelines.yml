@@ -22,7 +22,7 @@ steps:
     flutter --version
     flutter pub outdated
     flutter pub upgrade --major-versions
-    flutter pub get
+    flutter pub get 
   displayName: 'Run Flutter updates'
 
 # Run Tests First
