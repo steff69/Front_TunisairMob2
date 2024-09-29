@@ -169,7 +169,7 @@ steps:
     repository: 'mustapha69/Front_TunisairMob2'
     command: 'buildAndPush'
     Dockerfile: 'Docker/Dockerfile'  # Frontend Dockerfile
-    buildContext: '/home/azureuser/myagent/_work/3/s'
+    buildContext: '/home/azureuser/myagent/_work/5/s'
     tags: '$(Build.BuildId)'
   displayName: 'Build and Push Frontend Docker Image'
 
@@ -180,7 +180,7 @@ steps:
     repository: 'mustapha69/Back_TunisairMob2'
     command: 'buildAndPush'
     Dockerfile: 'backend/Docker/backend.Dockerfile'
-    buildContext: '/home/azureuser/myagent/_work/3/s'  # This should be the root of your project
+    buildContext: '/home/azureuser/myagent/_work/5/s'  # This should be the root of your project
     tags: '$(Build.BuildId)'
   displayName: 'Build and Push Backend Docker Image'
 
